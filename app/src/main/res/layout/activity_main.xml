@@ -4,34 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/teste_padr_o_gr_fico_da_pizza_em_grey_background_escuro_130112295"
+    android:background="@android:color/holo_orange_dark"
     tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtQuanti2"
+        android:layout_width="355dp"
+        android:layout_height="65dp"
+        android:background="@android:drawable/btn_default"
+        android:ems="10"
+        android:hint="Pizzas à pronta-entrega"
+        android:inputType="number"
+        android:numeric="integer"
+        android:shadowColor="@color/black"
+        android:textAlignment="center"
+        android:textColor="#EE0909"
+        android:textColorHighlight="#EE0909"
+        android:textColorHint="#EE0909"
+        android:textColorLink="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
 
     <Button
         android:id="@+id/btnPortuguesa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="175dp"
+        android:layout_height="65dp"
+        android:enabled="true"
         android:onClick="botaoPortuguesa"
         android:text="Portuguesa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintHorizontal_bias="0.936"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.808" />
+        app:layout_constraintVertical_bias="0.828" />
 
     <Button
         android:id="@+id/btnFrango"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="175dp"
+        android:layout_height="65dp"
+        android:enabled="true"
         android:onClick="botaoFrango"
         android:text="Frango"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintHorizontal_bias="0.936"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.443" />
+        app:layout_constraintVertical_bias="0.453" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -74,33 +99,17 @@
 
     <Button
         android:id="@+id/btnMarguerita"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="175dp"
+        android:layout_height="65dp"
+        android:enabled="true"
         android:onClick="botaoMarguerita"
         android:text="Marguerita"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.808" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="381dp"
-        android:layout_height="50dp"
-        android:background="@android:drawable/btn_default"
-        android:text="Pizzas à pronta-entrega"
-        android:textAlignment="center"
-        android:textColor="#EC0D0D"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.828" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -121,12 +130,14 @@
         android:layout_height="55dp"
         android:layout_marginBottom="16dp"
         android:background="@android:drawable/btn_default"
+        android:editable="true"
         android:ems="10"
         android:hint="O seu pedido é:"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textAlignment="center"
         android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -134,20 +145,21 @@
 
     <Button
         android:id="@+id/btnCalabresa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="157dp"
+        android:layout_height="65dp"
+        android:enabled="true"
         android:onClick="botaoCalabresa"
         android:text="Calabresa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.443" />
+        app:layout_constraintVertical_bias="0.454" />
 
     <EditText
         android:id="@+id/edtQuanti"
-        android:layout_width="314dp"
+        android:layout_width="325dp"
         android:layout_height="50dp"
         android:background="@android:drawable/btn_default"
         android:ems="10"
@@ -157,15 +169,14 @@
         android:shadowColor="@color/black"
         android:textAlignment="center"
         android:textColor="@color/design_default_color_on_secondary"
-        android:textColorHighlight="@color/black"
-        android:textColorHint="@color/black"
+        android:textColorHighlight="?attr/scrimBackground"
+        android:textColorHint="?android:attr/textColorHint"
         android:textColorLink="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.132" />
+        app:layout_constraintVertical_bias="0.139" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
